@@ -14,27 +14,14 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "images/",
-            },
-          },
-        ],
+        type: "asset/resource",
       },
     ],
   },
   devServer: {
     static: {
-      directory:path.resolve(__dirname, 'dist')
+      directory: path.resolve(__dirname, "dist"),
     },
-    port:3000,
-    open:true,
-    hot:true,
-    compress:true,
-    historyApiFallback: true,
-  }, 
+  },
   mode: "development",
 };
