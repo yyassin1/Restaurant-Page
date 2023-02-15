@@ -1,5 +1,4 @@
 import "./styles.css";
-import hookah from "./hookah.jpg";
 import Home from "./home.js";
 import Contact from "./contact.js";
 import Product from "./product.js";
@@ -12,7 +11,7 @@ function component() {
   const headerContainer = document.createElement("div");
   headerContainer.className = "header-container";
   headerContainer.innerHTML = `
-    <h1>Flavor Us Market</h1>
+    <h1 id="headee" >Flavor Us Market</h1>
     <h5>Discover indulgence in every puff</h5>
   `;
   content.appendChild(headerContainer);
@@ -31,6 +30,7 @@ function component() {
 
   // Dynamic content
   const dynamicContentContainer = document.createElement("div");
+  dynamicContentContainer.id = "dynamic-content";
   content.appendChild(dynamicContentContainer);
 
   const homeButton = document.getElementById("home-button");
@@ -53,6 +53,7 @@ function component() {
   addressButton.addEventListener("click", () => {
     dynamicContentContainer.innerHTML = Address();
   });
+  dynamicContentContainer.innerHTML = Home();
 }
 
 component();

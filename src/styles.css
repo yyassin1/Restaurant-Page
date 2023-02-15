@@ -4,7 +4,7 @@
 }
 body {
   font-family: Arial, sans-serif;
-  background-image: url("./back.jpg");
+  background-image: url("./h.jpg");
   background-size: cover;
   margin: 0px;
   padding: 0px;
@@ -27,6 +27,10 @@ h1,
 h5 {
   margin: 0;
   text-align: center;
+}
+#headee {
+  font-size: 40px;
+  font-weight: 800;
 }
 #buttons {
   display: flex;
@@ -55,24 +59,162 @@ img {
   height: auto;
 }
 #addressImg {
-  max-width: 70%;
+  max-width: 50%;
   height: auto;
 }
 #information {
   display: flex;
   justify-content: space-between;
+  margin-top: 0px;
   margin: 10px;
   padding: 20px;
+  background-color: #a3f4a6;
+  font-family: cursive;
+  opacity: 80%;
 }
+#information1 {
+  margin: 20px;
+  padding: 20px;
+  line-height: 30px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 #information2 {
   margin: 20px;
   padding: 20px;
   line-height: 30px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#information2 p {
+  margin: 0 0 10px 0; /* Add some bottom margin to separate the paragraphs */
+}
+#information2 strong {
+  font-weight: bold; /* Make the text bold */
+  margin-right: 5px; /* Add some right margin to separate the strong text from the rest of the text */
+}
+label {
+  display: inline-block;
+  width: 100px; /* Adjust the width as needed */
+  text-align: right; /* Align label text to the right */
+}
+
+input,
+textarea {
+  display: inline-block;
+  width: 250px; /* Adjust the width as needed */
+  margin-left: 10px; /* Add some margin between the label and input */
 }
 .buttons-container {
   margin: 0px;
   padding: 20px;
   background-color: lightgreen;
   opacity: 80%;
-  font-family:cursive;
+  font-family: cursive;
+}
+#homePage {
+  padding: 25px;
+  background-color: #a3f4a6;
+  margin-top: 20px;
+  margin: auto;
+  max-width: 600px;
+  opacity: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeParagraph {
+  font-family: cursive;
+  line-height: 30px;
+}
+#addressPage {
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#addressPage div {
+  margin-bottom: 20px;
+}
+#addressPage p {
+  font-family: cursive;
+}
+
+#addressImg {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.storeAddress {
+  padding: 10px 20px;
+  background-color: #0077ff;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.storeAddress:hover {
+  transform: scale(1.05);
+}
+
+#hookahProduct {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+#productList {
+  padding: 15px;
+  max-width: 300px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  line-height: 20px;
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#productList h4 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+#productList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+#productList li {
+  margin-bottom: 5px;
+}
+#productImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#dynamic-content {
+  transition: opacity 0.5s ease-in-out;
+}
+.fa-instagram {
+  font-size: 2em;
+  color: #e1306c;
 }
